@@ -17,10 +17,10 @@ This project analyzes a global retail dataset to solve complex business problems
 ### 1. Financial "What-If" Revenue Simulation 📈
 * **Business Problem:** How will a ±20% price change impact our global margins?
 * **Technical Skill:** DAX Numerical Parameters, Dynamic Measures.
-* **The Code:** [🔗 View DAX/SQL Logic](./SQL_Scripts/Financial_Simulation.sql)
+* **The Code:** [🔗 View DAX/SQL Logic](SQL_Scripts /Financial_Simulation.sql)
 * **The Visual:**
     > *[Insert Screenshot of your Slider and Revenue Graph Here]*
-
+SQL_Scripts /Financial_Simulation.sql
 ---
 
 ### 2. Advanced Customer Segmentation (RFM Model) 👥
