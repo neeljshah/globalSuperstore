@@ -1,72 +1,80 @@
-Data Engineering in SQL (BigQuery) & Advanced Visualization in Power BI
-📖 Project Overview
-This portfolio showcases a series of high-impact analytical projects using the Global Superstore dataset. The goal was to move beyond basic reporting and provide Strategic Decision Support for executive stakeholders. I managed the entire pipeline from raw data ingestion in Google BigQuery to complex DAX modeling in Power BI.
+# 🌍 Global Superstore: End-to-End Business Intelligence Portfolio
+> **Transforming raw transactional data into executive decision-support tools using SQL (BigQuery) and Power BI.**
 
-🚀 The Projects
-1. Financial "What-If" Revenue Simulation
-Business Problem: The CFO needed a way to forecast revenue based on potential price fluctuations without manual Excel updates.
+![Banner](https://img.shields.io/badge/Data_Warehouse-Google_BigQuery-blue?style=for-the-badge&logo=googlecloud)
+![Banner](https://img.shields.io/badge/BI_Tool-Power_BI-yellow?style=for-the-badge&logo=powerbi)
+![Banner](https://img.shields.io/badge/Language-SQL-orange?style=for-the-badge&logo=postgresql)
 
-Technical Solution: Created a DAX Parameter-driven simulation that allows users to adjust prices across markets in real-time.
+---
 
-Impact: Developed a "Revenue Gap" metric to show the dollar-value impact of pricing strategy shifts.
+## 📖 Executive Summary
+This project analyzes a global retail dataset to solve complex business problems including **customer churn**, **logistics bottlenecks**, and **pricing sensitivity**. By moving beyond simple descriptive statistics, I implemented advanced statistical modeling (RFM) and real-time forecasting.
 
-🔗 View SQL Aggregation Code
+---
 
-2. Advanced Customer Segmentation (RFM Model)
-Business Problem: Marketing campaigns were yielding low ROI because they were not targeted based on customer behavior.
+## 🚀 Key Projects & Technical Breakdown
 
-Technical Solution: Engineered an RFM (Recency, Frequency, Monetary) model using SQL NTILE(5) window functions to statistically rank the customer base.
+### 1. Financial "What-If" Revenue Simulation 📈
+* **Business Problem:** How will a ±20% price change impact our global margins?
+* **Technical Skill:** DAX Numerical Parameters, Dynamic Measures.
+* **The Code:** [🔗 View DAX/SQL Logic](./SQL_Scripts/Financial_Simulation.sql)
+* **The Visual:**
+    > *[Insert Screenshot of your Slider and Revenue Graph Here]*
 
-Impact: Segmented users into tiers (Champions, At-Risk, Hibernating), allowing for a 30% more efficient marketing spend allocation.
+---
 
-🔗 View RFM SQL Script
+### 2. Advanced Customer Segmentation (RFM Model) 👥
+* **Business Problem:** Which customers are our "Champions" and which are "At Risk"?
+* **Technical Skill:** Statistical Distribution using `NTILE(5)`, CTE Nesting.
+* **The Code:** [🔗 View RFM SQL Script](./SQL_Scripts/RFM_Segmentation.sql)
+* **The Visual:**
+    > 
 
-3. Customer Retention & Cohort Analysis
-Business Problem: High customer acquisition costs made it vital to understand when and why customers stop buying.
+---
 
-Technical Solution: Used MIN() OVER(PARTITION BY...) to identify customer "birth months" and built a Retention Heatmap to track month-over-month decay.
+### 3. Customer Retention & Cohort Analysis 🔄
+* **Business Problem:** Are we retaining customers acquired during holiday sales?
+* **Technical Skill:** Window Functions (`MIN() OVER`), Date Truncation.
+* **The Code:** [🔗 View Cohort SQL Script](./SQL_Scripts/Cohort_Analysis.sql)
+* **The Visual:**
+    > 
 
-Impact: Identified that customers acquired in Q4 have a 15% higher long-term retention rate than those acquired in Q1.
+---
 
-🔗 View Cohort SQL Script
+### 4. Logistics & Supply Chain Benchmarking 🚚
+* **Business Problem:** Which regions are failing to meet the global shipping average?
+* **Technical Skill:** `DATE_DIFF`, Global Benchmarking using `AVG() OVER()`.
+* **The Code:** [🔗 View Logistics SQL Script](./SQL_Scripts/Logistics_Performance.sql)
+* **The Visual:**
+    > *[Insert Screenshot of your Logistics Map/Bar Chart Here]*
 
-4. Logistics & Supply Chain Benchmarking
-Business Problem: Shipping delays were inconsistent across different global markets.
+---
 
-Technical Solution: Applied DATE_DIFF and AVG() OVER functions to benchmark individual shipping times against the global market average.
+### 5. Market Basket & Pareto Analysis (80/20 Rule) 🛒
+* **Business Problem:** What products should we bundle together?
+* **Technical Skill:** Self-Joins, Running Totals (Window Sums).
+* **The Code:** [🔗 View Strategy SQL Script](./SQL_Scripts/Strategy_Analysis.sql)
+* **The Visual:**
+    > 
 
-Impact: Flagged specific regional carriers that were performing 20% slower than the market baseline.
+---
 
-🔗 View Logistics SQL Script
+## 🛠️ Technical Mastery Checklist
+- [x] **Advanced SQL:** CTEs, Window Functions, Self-Joins, and NTILE Distribution.
+- [x] **Data Modeling:** Star Schema design and 1-to-many relationship management.
+- [x] **DAX:** What-If Parameters, Time Intelligence, and Conditional Formatting.
+- [x] **Business Acumen:** Defining KPIs (YoY Growth, Retention Rate, RFM).
 
-5. Market Basket & Pareto Analysis
-Business Problem: Inventory management was inefficient, and cross-selling opportunities were being missed.
+---
 
-Technical Solution: * Pareto: Used running totals to identify the 20% of products driving 80% of revenue.
-
-Market Basket: Used Self-Joins in SQL to find the most frequent product pairings.
-
-Impact: Provided a data-backed recommendation for product bundling and warehouse prioritization.
-
-🔗 View Strategy SQL Script
-
-🛠️ Technical Skill Summary
-SQL Mastery: Window Functions, CTEs, Self-Joins, Subqueries, and Data Type Casting.
-
-Power BI Mastery: DAX (Measures, Calculated Columns, Parameters), Data Modeling (Star Schema), and Conditional Formatting.
-
-Cloud Platforms: Google Cloud Platform (BigQuery) for high-volume data storage.
-
-📂 Repository Structure
-SQL_Scripts/: All raw .sql code used in BigQuery.
-
-Dashboards/: High-resolution screenshots of the final Power BI reports.
-
-Documentation/: PDF summaries of the business findings.
-
-👤 Contact & Links
-Portfolio Website: [Your Carrd Link]
-
-LinkedIn: [Your LinkedIn Profile]
-
-Email: [Your Email]
+## 📂 Project Structure
+```text
+├── SQL_Scripts/
+│   ├── Financial_Simulation.sql
+│   ├── RFM_Segmentation.sql
+│   ├── Cohort_Analysis.sql
+│   ├── Logistics_Performance.sql
+│   └── Strategy_Analysis.sql
+├── Dashboards/
+│   └── (Screenshots of Power BI Reports)
+└── README.md
