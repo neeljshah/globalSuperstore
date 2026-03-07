@@ -19,7 +19,7 @@ This project analyzes a global retail dataset to solve complex business problems
 * **Technical Skill:** DAX Numerical Parameters, Dynamic Measures.
 * **The Code:** [🔗 View DAX/SQL Logic](./SQL_Scripts%20/Financial_Simulation.sql)
 * **The Visual:**
-* <img width="963" height="245" alt="Screenshot 2026-03-06 192743" src="https://github.com/user-attachments/assets/e96f3593-17fd-45c0-8347-10a2105f9a64" />
+    > <img width="963" height="245" alt="Screenshot 2026-03-06 192743" src="https://github.com/user-attachments/assets/e96f3593-17fd-45c0-8347-10a2105f9a64" />
 
 SQL_Scripts /Financial_Simulation.sql
 ---
